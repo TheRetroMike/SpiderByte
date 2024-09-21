@@ -5,4 +5,4 @@ WORKDIR /opt/
 RUN wget https://github.com/Crypto-Currency/SpiderByte/raw/refs/heads/master/release/2204-spiderbyted
 RUN chmod +x 2204-spiderbyted
 RUN mv 2204-spiderbyted /usr/bin/spiderbyted
-CMD /usr/bin/spiderbyted --daemon
+CMD /usr/bin/spiderbyted --daemon;tail -f /root/SpiderByte/debug.log
